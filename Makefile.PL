@@ -36,6 +36,7 @@ my %WriteMakefileArgs = (
     'Getopt::Lucid' => '0',
     'IO::Socket::SSL' => '0',
     'Log::Dispatchouli' => '2',
+    'Mozilla::CA' => '0',
     'Object::Tiny' => '0',
     'Pod::Usage' => '0',
     'Time::Piece' => '0',
@@ -44,7 +45,7 @@ my %WriteMakefileArgs = (
     'autodie' => '2.00',
     'utf8' => '0'
   },
-  'VERSION' => '0.001',
+  'VERSION' => '0.002',
   'test' => {
     'TESTS' => 't/*.t'
   }

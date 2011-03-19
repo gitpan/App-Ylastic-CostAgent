@@ -1,5 +1,10 @@
 Revision history for App-Ylastic-CostAgent
 
+0.002     2011-03-18 23:24:22 America/New_York
+    - Add dependency on Mozilla::CA and switch on hostname verification
+      for SSL
+    - Fix test failures from extra warnings on older Perls
+
 0.001     2011-03-18 20:38:41 America/New_York
     - initial release to CPAN
 

@@ -41,6 +41,7 @@
             "Getopt::Lucid" : 0,
             "IO::Socket::SSL" : 0,
             "Log::Dispatchouli" : "2",
+            "Mozilla::CA" : 0,
             "Object::Tiny" : 0,
             "Pod::Usage" : 0,
             "Time::Piece" : 0,
@@ -63,7 +64,7 @@
    "provides" : {
       "App::Ylastic::CostAgent" : {
          "file" : "lib/App/Ylastic/CostAgent.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -79,6 +80,6 @@
          "web" : "http://github.com/dagolden/app-ylastic-costagent/tree"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
 

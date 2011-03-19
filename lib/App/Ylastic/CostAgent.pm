@@ -14,7 +14,7 @@ use utf8;
 
 package App::Ylastic::CostAgent;
 BEGIN {
-  $App::Ylastic::CostAgent::VERSION = '0.001';
+  $App::Ylastic::CostAgent::VERSION = '0.002';
 }
 # ABSTRACT: Perl port of the Ylastic Cost Agent for Amazon Web Services
 
@@ -26,7 +26,8 @@ use Config::Tiny;
 use File::Spec::Functions qw/catfile/;
 use File::Temp ();
 use Log::Dispatchouli 2;
-use IO::Socket::SSL; # force dependency to trigger SSL support
+use Mozilla::CA;      # force dependency to trigger SSL validation
+use IO::Socket::SSL;  # force dependency to trigger SSL support
 use Time::Piece;
 use Time::Piece::Month;
 use WWW::Mechanize;
@@ -195,7 +196,6 @@ sub _initialize_mech {
     quiet => 0,
     on_error => \&Carp::croak
   );
-  $self->mech->ssl_opts( verify_hostname => 0 );
   $self->mech->agent_alias("Linux Mozilla");
   $self->mech->default_header('Accept' => 'text/html, application/xml, */*');
 }
@@ -215,7 +215,8 @@ sub _parse_config {
       warn "Invalid AWS ID '$k'.  Skipping it.";
       next;
     }
-    my ($user, $pass) = map { $config->{$k}{$_} } qw/user pass/;
+    my ($user, $pass) = map { defined $_ ? $_ : '' }
+                        map { $config->{$k}{$_} } qw/user pass/;
     unless ( length $user && length $pass ) {
       warn "Invalid user/password for $k. Skipping it.";
       next;
@@ -267,7 +268,7 @@ App::Ylastic::CostAgent - Perl port of the Ylastic Cost Agent for Amazon Web Ser
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 

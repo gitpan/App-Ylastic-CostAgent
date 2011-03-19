@@ -68,7 +68,7 @@ ylastic_costagent - Send AWS usage and cost data to Ylastic
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -141,6 +141,13 @@ hours:
    0 */12 * * * /path/to/ylastic-costagent -s user /path/to/config.ini
 
 The CE<lt>-s userE<gt> option will log to the CE<lt>userE<gt> facility of syslogd.
+
+If you use a local perl library, be sure to add an appropriate PERL5LIB to
+your crontab file:
+
+   PERL5LIB=$HOME/perl5/lib/perl5/i686-linux:$HOME/perl5/lib/perl5
+
+Look at the PERL5LIB set by L<local::lib> for the right paths to use.
 
 =head1 ACKNOWLEDGMENTS
 
