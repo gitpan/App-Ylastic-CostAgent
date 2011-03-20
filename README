@@ -3,7 +3,7 @@ NAME
     Web Services
 
 VERSION
-    version 0.003
+    version 0.004
 
 DESCRIPTION
     This module contains the internal routines for L<ylastic-costagent>.

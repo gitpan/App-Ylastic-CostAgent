@@ -10,8 +10,7 @@
 #
 use strict;
 use warnings;
-package
-  ylastic_costagent;
+# PODNAME: ylastic-costagent
 # ABSTRACT: Send AWS usage and cost data to Ylastic
 
 use File::Basename;
@@ -64,11 +63,11 @@ exit $app->run;
 
 =head1 NAME
 
-ylastic_costagent - Send AWS usage and cost data to Ylastic
+ylastic-costagent - Send AWS usage and cost data to Ylastic
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

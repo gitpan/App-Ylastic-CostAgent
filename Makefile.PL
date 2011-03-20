@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   },
   'DISTNAME' => 'App-Ylastic-CostAgent',
   'EXE_FILES' => [
-    'bin/ylastic_costagent'
+    'bin/ylastic-costagent'
   ],
   'LICENSE' => 'apache',
   'NAME' => 'App::Ylastic::CostAgent',
@@ -45,7 +45,7 @@ my %WriteMakefileArgs = (
     'autodie' => '2.00',
     'utf8' => '0'
   },
-  'VERSION' => '0.003',
+  'VERSION' => '0.004',
   'test' => {
     'TESTS' => 't/*.t'
   }

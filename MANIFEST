@@ -5,7 +5,7 @@ META.json
 META.yml
 Makefile.PL
 README
-bin/ylastic_costagent
+bin/ylastic-costagent
 dist.ini
 examples/config.ini
 lib/App/Ylastic/CostAgent.pm

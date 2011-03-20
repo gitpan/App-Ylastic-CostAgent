@@ -64,7 +64,7 @@
    "provides" : {
       "App::Ylastic::CostAgent" : {
          "file" : "lib/App/Ylastic/CostAgent.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -80,6 +80,6 @@
          "web" : "http://github.com/dagolden/app-ylastic-costagent/tree"
       }
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }
 
