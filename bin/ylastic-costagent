@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/usr/bin/perl
 #
 # This file is part of App-Ylastic-CostAgent
 #
@@ -67,7 +67,7 @@ ylastic-costagent - Send AWS usage and cost data to Ylastic
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

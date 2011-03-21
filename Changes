@@ -1,5 +1,9 @@
 Revision history for App-Ylastic-CostAgent
 
+0.005     2011-03-21 10:13:11 America/New_York
+
+    - Ensure proper shebang line gets set in ylastic-costagent
+
 0.004     2011-03-20 03:32:00 America/New_York
 
     - Renamed ylastic_costagent to ylastic-costagent 

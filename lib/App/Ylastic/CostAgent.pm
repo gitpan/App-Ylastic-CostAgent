@@ -14,7 +14,7 @@ use utf8;
 
 package App::Ylastic::CostAgent;
 BEGIN {
-  $App::Ylastic::CostAgent::VERSION = '0.004';
+  $App::Ylastic::CostAgent::VERSION = '0.005';
 }
 # ABSTRACT: Perl port of the Ylastic Cost Agent for Amazon Web Services
 
@@ -268,7 +268,7 @@ App::Ylastic::CostAgent - Perl port of the Ylastic Cost Agent for Amazon Web Ser
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 DESCRIPTION
 
