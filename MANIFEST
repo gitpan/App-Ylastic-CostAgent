@@ -5,6 +5,7 @@ META.json
 META.yml
 Makefile.PL
 README
+README.INSTALL
 bin/ylastic-costagent
 dist.ini
 examples/config.ini
